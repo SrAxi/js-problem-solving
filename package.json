@@ -1,0 +1,25 @@
+{
+  "name": "js-problem-solving",
+  "version": "1.0.0",
+  "description": "Some problem-solving questions and problems. Vanilla JS.",
+  "main": "9-balls-weights/9-balls-weights.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SrAxi/js-problem-solving.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SrAxi/js-problem-solving/issues"
+  },
+  "homepage": "https://github.com/SrAxi/js-problem-solving#readme",
+  "dependencies": {
+    "@types/jest": "^24.0.15",
+    "function-performance-test": "^1.0.6",
+    "jest": "^24.8.0"
+  }
+}
