@@ -1,5 +1,5 @@
 /**
- * Kidnappers sent a ramson note.
+ * Kidnappers sent a ransom note.
  * Verify if it was created from the given magazine.
  *
  * @param m
