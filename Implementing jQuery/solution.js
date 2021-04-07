@@ -1,3 +1,4 @@
+// First part of the problem
 function $(query) {
     let element = document.querySelector(query)
 
@@ -21,7 +22,7 @@ function $(query) {
     }
 }
 
-
+// Second part of the problem
 const el = $('#id').addClass('my-class').text('Hi mum!')
 
 setTimeout(() => {
