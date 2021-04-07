@@ -45,3 +45,17 @@ function flatten2(arr) {
 function flatten3(arr) {
     return arr.flat(Infinity)
 }
+
+// Approach #4
+function flatten4(array) {
+    const flatArray = []
+
+    for (let i = 0; i < array.length; i++) {
+        const item = array[i]
+        Array.isArray(item)
+            ? flatArray.push(...flatten(item))
+            : flatArray.push(item)
+    }
+
+    return flatArray
+}
