@@ -13,18 +13,6 @@
 ```javascript
 /**
  Create an LRU Cache that will accept a max size as argument.
-
-
- const lRUCache = new LRUCache(2);
- lRUCache.put('a', 1); // cache is {'a'=1}
- lRUCache.put('b', 2); // cache is {'a'=1, 'b'=2}
- lRUCache.get('a');    // return 1
- lRUCache.put('c', 3); // LRU key was 'b', evicts key 'b', cache is {'a'=1, 'c'=3}
- lRUCache.get('b');    // returns -1 (not found)
- lRUCache.put('d', 4); // LRU key was 'a', evicts key 'a', cache is {'d'=4, 'c'=3}
- lRUCache.get('a');    // return -1 (not found)
- lRUCache.get('b');    // return 3
- lRUCache.get('d');    // return 4
 */
 
 // Example 1:
