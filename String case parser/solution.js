@@ -9,13 +9,14 @@ function caseParser(str, outputCase) {
 
     switch (outputCase) {
         case 'camel':
-            return `${words[0]}${capitalize(words[1])}`
+            const [first, ...rest] = words
+            return `${first}${rest.map(x => capitalize(x)).join('')}`
         case 'pascal':
-            return `${capitalize(words[0])}${capitalize(words[1])}`
+            return words.map(x => capitalize(x)).join('')
         case 'snake':
-            return `${words[0]}_${words[1]}`
+            return words.join('_')
         case 'kebab':
-            return `${words[0]}-${words[1]}`
+            return words.join('-')
         default:
             return str
     }
