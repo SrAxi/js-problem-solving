@@ -3,7 +3,7 @@ function caseParser(str, outputCase) {
     const joinCapitalize = arr => arr.map(x => capitalize(x)).join('')
 
     const words = str
-        .replace(/[-_]/, ' ')
+        .replace(/[-_]/g, ' ')
         .replace(/([a-z])([A-Z])/g, '$1 $2')
         .split(' ')
         .map(x => x.toLowerCase())
