@@ -1,5 +1,6 @@
 function caseParser(str, outputCase) {
     const capitalize = s => s.charAt(0).toUpperCase() + s.slice(1)
+    const joinCapitalize = arr => arr.map(x => capitalize(x)).join('')
 
     const words = str
         .replace(/[-_]/, ' ')
@@ -10,9 +11,9 @@ function caseParser(str, outputCase) {
     switch (outputCase) {
         case 'camel':
             const [first, ...rest] = words
-            return `${first}${rest.map(x => capitalize(x)).join('')}`
+            return `${first}${joinCapitalize(rest)}`
         case 'pascal':
-            return words.map(x => capitalize(x)).join('')
+            return joinCapitalize(words)
         case 'snake':
             return words.join('_')
         case 'kebab':
@@ -21,5 +22,3 @@ function caseParser(str, outputCase) {
             return str
     }
 }
-
-
